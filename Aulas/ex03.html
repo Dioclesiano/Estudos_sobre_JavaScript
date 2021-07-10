@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Interação</title>
+
+    <style>
+        body{
+            background-color: rgb(456, 32, 8);
+            font: normal 20pt times;
+            color: rgb(45, 32, 85);
+        }
+    </style>
+</head>
+<body>
+    <h1>Terceiro exercício</h1>
+    <p>Interagindo com usuário</p>
+    
+    <!--
+    <script>
+        var n1 = window.prompt('Digite um número » ')
+        var n2 = window.prompt('Digite outro número » ')
+        var s = n1 + n2 
+        //O +(mais) serve para CONCATENAÇÃO e ADIÇÃO. No caso de S, o + tem
+        //valor de concatenação, ao invés de somar os valores, apenas irá uní-los.
+        //A maneira para resolver a soma acima é convertendo os valores para numéricos.
+        window.alert(`A soma de ${n1} + ${n2} é igual à ${s}`)
+    O script abaixo irá resolver o problema da conversão
+    </script>
+    -->
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número » '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número » '))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} + ${n2} = ${s}`)
+    </script>
+</body>
+</html>

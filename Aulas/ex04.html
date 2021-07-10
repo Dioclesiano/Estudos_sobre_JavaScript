@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Quarta Aula</title>
+</head>
+<body>
+    <h1>Formatando Strings</h1>
+    <p>var s = 'JavaScript'
+        <ul>
+            <li>'Eu estou aprendendo s'</li>
+            Nesse caso a escrita JavaScript não aparecerá.
+            <li>'Eu estou aprendendo' + s</li>
+            Aqui está sendo usado a CONCATENAÇÃO e aparecerá a escrita JavaScript.
+            <li>`Eu estou aprendendo ${s}`</li>
+            Nesse caso está sendo usado Placeholder($) junto com crase. Essa técnica
+            chama-se template string e é usada para fazer interpolação.
+        </ul>
+    </p>
+   
+    <script>
+        var nome = window.prompt('Digite o seu nome')
+        document.write(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras <br/>`)
+        document.write(`Seu nome em letras Maiúsculas é ${nome.toUpperCase()} <br/>`)
+        document.write(`Seu nome em letras Minúsculas é ${nome.toLowerCase()} <br/>`)
+        
+        var n = window.prompt('Digite um número que será convertido em moeda')
+        document.write(n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+        </script>
+</body>
+</html>
