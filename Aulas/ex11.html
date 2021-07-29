@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Mouse Saindo</title>
+
+    <style>
+        div#area {
+            font: italic 20px Serif;
+            background: rgb(46, 25, 88);
+            color: rgb(172, 183, 204);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmouseleave="sair()">
+        Interagindo...
+    </div>
+
+    <script>
+        function sair() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Mouse Saiu'
+        }
+    </script>
+</body>
+</html>

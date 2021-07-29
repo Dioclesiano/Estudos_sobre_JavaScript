@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Somando Números</title>
+
+    <style>
+        body {
+            font: normal 18px Arial;
+        }
+        input {
+            font: normal 18px Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> + 
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1') //Essa maneira faz a ligação com Input
+            var tn2 = window.document.querySelector('input#txtn2') //Essa forma também tem a mesma função do getElementById
+            
+            var res = window.document.getElementById('res')
+
+            var n1 = Number(tn1.value) //Conversão dos dados para numérico
+            var n2 = Number.parseFloat(tn2.value) //Outra maneira de conversão dos dados para numérico
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}<strong>.`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Soltando o botão do Mouse</title>
+
+    <style>
+        div#area {
+            font: italic 20px Arial;
+            background: rgb(48, 32, 65);
+            color: rgb(655, 32, 45);
+            width: 200px;
+            height: 200px;
+            line-height:200px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmouseup="ultimoClick()">
+        Interagindo...
+    </div>
+
+    <script>
+        function ultimoClick() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Teminou o Click'
+        }
+    </script>
+</body>
+</html>

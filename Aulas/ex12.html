@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Interagindo</title>
+
+    <style>
+        div#area {
+            font: bold 20px times;
+            background: rgb(65, 122, 34);
+            color:chocolate;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmouseenter="entrou()" onmouseup="clicou()" onmouseleave="saiu()">
+        Interagindo
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        
+        function entrou() {
+            a.innerText = 'Entrou'
+        }
+        function clicou() {
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+        function saiu() {
+            a.innerText = 'Saiu'
+            a.style.background = 'rgb(65, 122, 34)'
+        }
+    </script>
+</body>
+</html>

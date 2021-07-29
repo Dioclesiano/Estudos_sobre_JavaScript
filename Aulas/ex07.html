@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Entrada do Mouse</title>
+
+    <style>
+        div#area {
+            font: italic 22px comic;
+            background: rgb(126, 652, 355);
+            color: red;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmouseenter="entrar()">
+        Interagindo...
+    </div>
+
+    <script>
+        function entrar() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Mouse Entrou'
+        }
+    </script>
+</body>
+</html>
