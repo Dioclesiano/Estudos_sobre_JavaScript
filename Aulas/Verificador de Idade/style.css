@@ -1,0 +1,35 @@
+body {
+    background-color: rgba(0, 204, 255, 0.973);
+}
+header {
+    color: rgba(255, 255, 255, 0.274);
+    text-align: center;
+    border-radius: 10px;
+}
+section {
+    background: rgba(255, 255, 255, 0.836);
+    border-radius: 10px;
+    padding: 50px;
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1)
+}
+div {
+    text-align: center;
+}
+div#res {
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+    margin-top:-150px;
+}
+h1 {
+    color: white;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 200pt;
+
+}
